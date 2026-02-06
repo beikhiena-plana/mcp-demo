@@ -1,0 +1,18 @@
+[project]
+name = "mcp-demo"
+version = "0.1.0"
+description = "Production MCP Server"
+authors = [
+    {name = "Blessed Eikhiena", email = "beikhiena@planatechnologies.com"}
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.14.5",
+]
+
+[project.scripts]
+serve = "mcp_demo.server:run_server"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
