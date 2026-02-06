@@ -90,7 +90,7 @@ def apply_fix(filepath: str, new_content: str, reason: str) -> str:
     new_size = len(new_content.encode("utf-8")) # Bytes size for accuracy
 
     return (
-        f"✅ Fix applied to {filepath}\n"
+        f"Fix applied to {filepath}\n"
         f"Reason: {reason}\n"
         f"Size change: {old_size} -> {new_size} bytes."
     )
